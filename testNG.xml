@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FD Test Suite">
+	<suite-files>
+		<suite-file path="DevelopmentTestSuite/Clientsettings.xml" />
+	</suite-files>
+</suite>

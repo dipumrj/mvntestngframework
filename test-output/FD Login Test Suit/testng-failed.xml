@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FD Login Test Suit]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="digital.flightdeck.common.Listener"/>
+  </listeners>
+  <test thread-count="5" name="FD Clientsettings(failed)">
+    <classes>
+      <class name="digital.flightdeck.testsuite.ClientSettingsTestCase">
+        <methods>
+          <include name="clearSession"/>
+          <include name="createClientWithValidData"/>
+          <include name="goToClientPage"/>
+          <include name="gotoCreateBookingPage"/>
+        </methods>
+      </class> <!-- digital.flightdeck.testsuite.ClientSettingsTestCase -->
+    </classes>
+  </test> <!-- FD Clientsettings(failed) -->
+</suite> <!-- Failed suite [FD Login Test Suit] -->

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="FD Login Test Suit" >
+<listeners>
+<listener class-name="digital.flightdeck.common.Listener"></listener>
+</listeners>
+  <test name="FD Login Test">
+	 <classes>
+<!-- 	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" /> -->
+	  	   <class name ="digital.flightdeck.testsuite.ClientSettingsTestCase" />
+	 </classes>
+   </test>
+</suite>
