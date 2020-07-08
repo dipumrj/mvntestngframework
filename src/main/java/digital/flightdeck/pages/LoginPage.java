@@ -53,14 +53,12 @@ public class LoginPage {
 	}
 
 	
-	/* Constructor */
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
 
-	/* Actions on WebElements */
 	public void enterUsername(String username) {
 		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(usernameTextField));
 		usernameTextField.sendKeys(username);
@@ -76,8 +74,6 @@ public class LoginPage {
 		loginButton.click();
 
 	}
-
-	/* Page Functions */
 	
 	public void login(String username, String password) throws InterruptedException {
 		enterUsername(username);

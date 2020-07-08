@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="FD Rss Test Suit" >
+<listeners>
+<listener class-name="digital.flightdeck.common.Listener"></listener>
+</listeners>
+  <test name="FD RssFeed">
+	 <classes>
+	  	   <class name ="digital.flightdeck.testsuite.RssFeedTestCase" />
+	 </classes>
+   </test>
+</suite>

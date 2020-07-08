@@ -4,16 +4,14 @@
   <listeners>
     <listener class-name="digital.flightdeck.common.Listener"/>
   </listeners>
-  <test thread-count="5" name="FD Clientsettings(failed)">
+  <test thread-count="5" name="FD RssFeed(failed)">
     <classes>
-      <class name="digital.flightdeck.testsuite.ClientSettingsTestCase">
+      <class name="digital.flightdeck.testsuite.RssFeedTestCase">
         <methods>
-          <include name="clearSession"/>
-          <include name="createClientWithValidData"/>
-          <include name="goToClientPage"/>
-          <include name="gotoCreateBookingPage"/>
+          <include name="gotoLoginPage"/>
+          <include name="enterRssFeed"/>
         </methods>
-      </class> <!-- digital.flightdeck.testsuite.ClientSettingsTestCase -->
+      </class> <!-- digital.flightdeck.testsuite.RssFeedTestCase -->
     </classes>
-  </test> <!-- FD Clientsettings(failed) -->
+  </test> <!-- FD RssFeed(failed) -->
 </suite> <!-- Failed suite [FD Login Test Suit] -->

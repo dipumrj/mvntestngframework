@@ -5,8 +5,7 @@
 </listeners>
   <test name="FD Login Test">
 	 <classes>
-<!-- 	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" /> -->
-	  	   <class name ="digital.flightdeck.testsuite.ClientSettingsTestCase" />
+	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" />
 	 </classes>
    </test>
 </suite>

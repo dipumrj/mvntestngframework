@@ -13,12 +13,15 @@ public class LoginPageDataProvider {
 		return CSVDataProvider.getCSVData(System.getProperty("user.dir")+"\\CSV Files\\validLoginData.csv"); 
 	}
 	
-	@DataProvider(name = "createclient")
-	public static Object[][] getclientdata() throws IOException {
-		return CSVDataProvider.getCSVData(System.getProperty("user.dir")+"\\CSV Files\\createclient.csv"); 
-	}
-		
-		
-	
+//	@DataProvider(name = "ValidRssData")
+//	public static Object[][] getValidRssData() throws IOException {
+//		return CSVDataProvider.getCSVData(System.getProperty("user.dir")+"\\CSV Files\\ValidRssData.csv"); 
+//	}
+//	
+//	@DataProvider(name = "InValidRssData")
+//	public static Object[][] getInValidRssData() throws IOException {
+//		return CSVDataProvider.getCSVData(System.getProperty("user.dir")+"\\CSV Files\\InValidRssData.csv"); 
+//	}
+//	
 
 }

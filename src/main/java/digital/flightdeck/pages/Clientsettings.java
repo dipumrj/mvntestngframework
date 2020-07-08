@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class Clientsettings {
 	private WebDriver driver;
 	JavascriptExecutor js;
@@ -85,44 +86,9 @@ public class Clientsettings {
 	WebElement ConfirmPopup;
 	
 	
+	@FindBy(xpath = "//button[text()='Finish']")
+	WebElement FinishButton;
 	
-//
-//	@FindBy(css = ".sp-dd")
-//	WebElement primarycolorDropdown;
-//	
-//	@FindBy(css = ".sp-choose")
-//	WebElement colorentrytextbox;
-//			
-
-	
-//	@FindBy(css = "clschkUserGroup")
-//	WebElement usergroupnamecheckbox;
-//
-//	@FindBy(xpath = "//*[@id=\\\"btnSaveUserGroup\\\"]")
-//	WebElement SaveUserGroupbutton;
-//	
-	
-//	@FindBy(xpath = "//input[@type='text'][@class='span12 no-radius txtBrandedTerm']")
-//	WebElement BrandTermtextbox;
-//		
-
-	
-	
-	
-//	
-//	@FindBy(xpath = "//input[@type='submit'][@id='btnAlias']")
-//	WebElement AddAliasButton;
-//			
-
-
-//	
-//	@FindBy(id = "btnContinueMakingCharts")
-//	WebElement contiuneButton;
-//		
-//	@FindBy(xpath = "//button[text()='Finish']")
-//	WebElement FinishButton;
-//	
-//	
 	
 	public WebDriver getDriver() {
 		return driver;
@@ -295,7 +261,7 @@ public class Clientsettings {
 	public WebElement getConfirmokButton() {
 		return ConfirmokButton;
 	}
-
+	
 	public void setConfirmokButton(WebElement ConfirmokButton) {
 		this.ConfirmokButton = ConfirmokButton;
 	}
@@ -309,31 +275,13 @@ public class Clientsettings {
 	}
 	
 	
-	
-//	public WebElement getPrimarycolorDropdown() {
-//		return primarycolorDropdown;
-//	}
-//
-//	public void setPrimarycolorDropdown(WebElement primarycolorDropdown) {
-//		this.primarycolorDropdown = primarycolorDropdown;
-//	}
-//
-//	public WebElement getColorentrytextbox() {
-//		return colorentrytextbox;
-//	}
-//
-//	public void setColorentrytextbox(WebElement colorentrytextbox) {
-//		this.colorentrytextbox = colorentrytextbox;
-//	}
-//
-//
-//	public WebElement getFinishButton() {
-//		return FinishButton;
-//	}
-//
-//	public void setFinishButton(WebElement finishButton) {
-//		FinishButton = finishButton;
-//	}
+	public WebElement getFinishButton() {
+		return FinishButton;
+	}
+
+	public void setFinishButton(WebElement finishButton) {
+		FinishButton = finishButton;
+	}
 
 	
 	public Clientsettings(WebDriver driver) {
@@ -342,20 +290,13 @@ public class Clientsettings {
 
 	}
 
-	/* Actions on WebElements */
+	
 	public void clickmyprojectsLink() {
 		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(myprojectsLink));
 		myprojectsLink.click();
 	}
 
 	
-	
-//	synchronized (driver) // Wait 20 seconds for load
-//	{
-//	    this.driver.wait(20000);
-//	   
-//	}
-//	
 	public void clickaddprofileButton() {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(addprofileButton));
 		addprofileButton.click();
@@ -377,6 +318,7 @@ public class Clientsettings {
 		websitetextbox.sendKeys(website);
 	}
 	
+	// Yet to implement Common function
 	public void selectfrequency()
 	{
 		js=(JavascriptExecutor)driver; // Select Frequency 
@@ -426,6 +368,7 @@ public class Clientsettings {
 		addresstextbox.sendKeys(address);
 	}
 	
+	
 	public void selectsitetype()
 	{
 		js=(JavascriptExecutor)driver;
@@ -433,13 +376,10 @@ public class Clientsettings {
 		js=null;
 	}
 	
-	
+	// Yet to implement Common function
 	public void UploadImage()
-	{
-		
-		
-		//WebElement uploadFileElement=new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.id("file")));
-		
+	{	
+						
 		uploadFileElement=new WebDriverWait(driver, 20).until(ExpectedConditions.presenceOfElementLocated(By.id("file")));
 		js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].style.visibility='visible'", uploadFileElement);
@@ -452,25 +392,25 @@ public class Clientsettings {
 		SaveandNextbutton.click();
 	}
 	
+	// Yet to implement Common function
 	public void chooseusergroup()
 	{
 	
 		List<WebElement> Usergroups =driver.findElements(By.className("clschkUserGroup")); // Select multiple Usergroups
-		//List<WebElement> Usergroups =(List<WebElement>) UserGroupcheckbox; // Select multiple Usergroups
-	 	js = (JavascriptExecutor) driver;
+		js = (JavascriptExecutor) driver;
 	    js.executeScript("arguments[0].click();", Usergroups.get(0)); // Select 3rd user group
 	    js=null;
 	}
 	
+	// Yet to implement Common function
 	public void saveusergroup()
 	{
 		js=(JavascriptExecutor)driver; // click save user group button
 		js.executeScript("$('#btnSaveUserGroup').click()"); 
 		js=null;
 	}
-	
-	
-	
+		
+	// Yet to implement Common function
 	public void choosesearchengine()
 	{
 		js=(JavascriptExecutor)driver; // Choose Search Engine
@@ -491,11 +431,12 @@ public class Clientsettings {
 		AddBrandedTermsButton.click();
 	}
 	
+	// Yet to implement Common function
 	public void passBrandedTerms()
 	{
 		
 		List<WebElement> BrandTerms =driver.findElements(By.xpath("//input[@type='text'][@class='span12 no-radius txtBrandedTerm']")); 
-			//new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(BrandedTermsTextbox)); // Select multiple Usergroups
+			 // Select multiple Usergroups
 		js = (JavascriptExecutor) driver;
 		for(int i=0;i<=1;i++)
 		{
@@ -519,6 +460,7 @@ public class Clientsettings {
 		AddAliasesButton.click();
 	}
 	
+	// Yet to implement Common function
 	public void enterAliase()
 	{
 		
@@ -526,7 +468,7 @@ public class Clientsettings {
 	 	js = (JavascriptExecutor) driver;
 	 	for(int i=0;i<=1;i++)
 	 	{
-	    //js.executeScript("arguments[0].value='"+AliasesValue+i + "'", Aliases.get(i)); // Select 3rd user group
+	    // Select 3rd user group
 	 	js.executeScript("arguments[0].value='"+"Aliases"+i+".com"+ "'", Aliases.get(i)); 
 	 	}
 	 	js=null;
@@ -536,7 +478,7 @@ public class Clientsettings {
 	
 	public void SaveAliases()
 	{
-		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(SaveAddAliasesButton));
+		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(SaveAddAliasesButton));
 		SaveAddAliasesButton.click();
 	
 	}
@@ -549,6 +491,7 @@ public class Clientsettings {
 		ConfirmokButton.click();
 	}
 	
+	// Yet to implement Common function
 	public void clickoncontinueButton()
 	{
 		js=(JavascriptExecutor)driver;
@@ -556,45 +499,41 @@ public class Clientsettings {
 		js=null;
 	}
 	
-	
+	// Yet to implement Common function
 	public void ConfirmClickPopupButton() throws InterruptedException
 	{
 		synchronized (driver) // Wait 5 seconds for confirm button load
 		{
 		    driver.wait(5000);
 		}
-		
-		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(ConfirmPopup));	
+	
 		Boolean iselementpresent =  driver.findElements(By.xpath("//text()[contains(.,'Confirm')]/ancestor::button[1]")).size()!= 0;
 	   if (iselementpresent == true)
 	   {
-		   ConfirmPopup.click();
-	   }
+		   
+		   driver.findElement(By.xpath("//text()[contains(.,'Confirm')]/ancestor::button[1]")).click();
+ 	   }
 	   
 	}
 	
+
+	// Yet to implement Common function
 	public void ClickonFinishbutton() throws InterruptedException
 	{
-	
-		synchronized (driver) // Wait 10 seconds for continue button load
-		{
-		    driver.wait(10000);
-		}
-		
+				 
 		js=(JavascriptExecutor)driver;
-		js.executeScript("$(\"#divProfileSetting > div > button.btn.btn-primary.btnNavigateToKeywordManager\").click()"); 
+		js.executeScript("window.scrollBy(0,1000)");
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[class='btn btn-primary btnNavigateToKeywordManager']"))).click();	
 		js=null;
-		
-	}
 	
+	}
+
 	
 
-	/* Page Functions */
+ //Functions 
 	
 	public void createclient(String Clientname,String Pofilename,String website,String description,String contactperson,String email,String address) throws InterruptedException {
 		
-		//clickmyprojectsLink();
-		//clickaddprofileButton();
 		enterClientname(Clientname);
 		enterprofilename(Pofilename);
 		enterWebsite(website);
@@ -604,7 +543,6 @@ public class Clientsettings {
 		enterdescription(description);
 		entercontactperson(contactperson);
 		enteremail(email);
-		//checkcommacheckbox();
 		enteraddress(address);
 		selectsitetype();
 		clicksaveandnext();
@@ -619,6 +557,7 @@ public class Clientsettings {
 		enterAliase();
 		SaveAliases();
 		clickConfirmokButton();
+		ConfirmClickPopupButton();
 		clickoncontinueButton();
 		ConfirmClickPopupButton();
 		ClickonFinishbutton();
