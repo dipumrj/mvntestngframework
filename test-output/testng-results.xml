@@ -1,98 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-15T07:32:09Z" name="FD Rss Test Suit" finished-at="2020-07-15T07:37:08Z" duration-ms="298795">
+  <suite started-at="2020-07-27T11:05:45Z" name="FD Login Test Suit" finished-at="2020-07-27T11:06:22Z" duration-ms="37005">
     <groups>
     </groups>
-    <test started-at="2020-07-15T07:32:09Z" name="FD RssFeed" finished-at="2020-07-15T07:37:08Z" duration-ms="298795">
-      <class name="digital.flightdeck.testsuite.RssFeedTestCase">
-        <test-method is-config="true" signature="gotoLoginPage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:32:09Z" name="gotoLoginPage" finished-at="2020-07-15T07:32:19Z" duration-ms="9359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoLoginPage -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:32:19Z" name="gotoHomePage" finished-at="2020-07-15T07:32:19Z" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="clearUrlTextArea()[pri:1, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:32:19Z" name="clearUrlTextArea" finished-at="2020-07-15T07:33:40Z" duration-ms="80847" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearUrlTextArea -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:33:40Z" name="gotoHomePage" finished-at="2020-07-15T07:33:40Z" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="isRSSElementPresent(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:33:40Z" name="isRSSElementPresent" data-provider="RssElement" finished-at="2020-07-15T07:33:53Z" duration-ms="13105" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isRSSElementPresent -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:33:53Z" name="gotoHomePage" finished-at="2020-07-15T07:33:53Z" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="isRSSElementPresent(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:33:53Z" name="isRSSElementPresent" data-provider="RssElement" finished-at="2020-07-15T07:34:01Z" duration-ms="7654" status="PASS">
+    <test started-at="2020-07-27T11:05:45Z" name="FD Login Test" finished-at="2020-07-27T11:06:22Z" duration-ms="37005">
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
+        <test-method is-config="true" signature="goToHomePage(org.testng.ITestContext)[pri:0, instance:digital.flightdeck.testsuite.LoginPageTestCase@51972dc7]" started-at="2020-07-27T11:05:45Z" name="goToHomePage" finished-at="2020-07-27T11:06:09Z" duration-ms="24004" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RssTextArea]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[id]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AddRssUrl]]>
+                <![CDATA[org.testng.TestRunner@65a4798f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- isRSSElementPresent -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:34:01Z" name="gotoHomePage" finished-at="2020-07-15T07:34:01Z" duration-ms="6" status="PASS">
+        </test-method> <!-- goToHomePage -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:digital.flightdeck.testsuite.LoginPageTestCase@51972dc7]" started-at="2020-07-27T11:06:09Z" name="goToLoginPage" finished-at="2020-07-27T11:06:09Z" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="isRSSElementPresent(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:34:01Z" name="isRSSElementPresent" data-provider="RssElement" finished-at="2020-07-15T07:35:10Z" duration-ms="69936" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[AddRssUrlSaveButton]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cssselector]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[div[id='dvInvalidRssUrlHolder']]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isRSSElementPresent -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:10Z" name="gotoHomePage" finished-at="2020-07-15T07:35:10Z" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="enterInValidRssFeed(java.lang.String, java.lang.String)[pri:3, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:10Z" name="enterInValidRssFeed" data-provider="InValidRssData" finished-at="2020-07-15T07:35:10Z" duration-ms="2" status="PASS">
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="loginWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:digital.flightdeck.testsuite.LoginPageTestCase@51972dc7]" started-at="2020-07-27T11:06:09Z" name="loginWithValidCredentials" data-provider="validLoginData" finished-at="2020-07-27T11:06:09Z" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -103,103 +33,32 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterInValidRssFeed -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:10Z" name="gotoHomePage" finished-at="2020-07-15T07:35:10Z" duration-ms="7" status="PASS">
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="goToLoginPage()[pri:0, instance:digital.flightdeck.testsuite.LoginPageTestCase@51972dc7]" started-at="2020-07-27T11:06:09Z" name="goToLoginPage" finished-at="2020-07-27T11:06:10Z" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="enterInValidRssFeed(java.lang.String, java.lang.String)[pri:3, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:10Z" name="enterInValidRssFeed" data-provider="InValidRssData" finished-at="2020-07-15T07:35:11Z" duration-ms="506" status="PASS">
+        </test-method> <!-- goToLoginPage -->
+        <test-method signature="loginWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:digital.flightdeck.testsuite.LoginPageTestCase@51972dc7]" started-at="2020-07-27T11:06:10Z" name="loginWithValidCredentials" data-provider="validLoginData" finished-at="2020-07-27T11:06:22Z" duration-ms="12020" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[feedpress]]>
+                <![CDATA[dipesh]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Invalid url(s)]]>
+                <![CDATA[dmaharjan]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterInValidRssFeed -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:11Z" name="gotoHomePage" finished-at="2020-07-15T07:35:11Z" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="enterInValidRssFeed(java.lang.String, java.lang.String)[pri:3, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:11Z" name="enterInValidRssFeed" data-provider="InValidRssData" finished-at="2020-07-15T07:35:11Z" duration-ms="344" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[feedpress.com.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Invalid url(s)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterInValidRssFeed -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:11Z" name="gotoHomePage" finished-at="2020-07-15T07:35:11Z" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="enterValidRssFeed(java.lang.String)[pri:4, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:11Z" name="enterValidRssFeed" data-provider="ValidRssData" finished-at="2020-07-15T07:35:11Z" duration-ms="113" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterValidRssFeed -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:11Z" name="gotoHomePage" finished-at="2020-07-15T07:35:11Z" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="enterValidRssFeed(java.lang.String)[pri:4, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:11Z" name="enterValidRssFeed" data-provider="ValidRssData" finished-at="2020-07-15T07:35:12Z" duration-ms="505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://webmasters.googleblog.com/feeds/posts/default]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterValidRssFeed -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:12Z" name="gotoHomePage" finished-at="2020-07-15T07:35:12Z" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="enterValidRssFeed(java.lang.String)[pri:4, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:12Z" name="enterValidRssFeed" data-provider="ValidRssData" finished-at="2020-07-15T07:35:12Z" duration-ms="232" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://feedpress.me/mozblog]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterValidRssFeed -->
-        <test-method is-config="true" signature="gotoHomePage()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:12Z" name="gotoHomePage" finished-at="2020-07-15T07:35:12Z" duration-ms="42" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gotoHomePage -->
-        <test-method signature="validateRssFeed()[pri:5, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:35:12Z" name="validateRssFeed" finished-at="2020-07-15T07:37:07Z" duration-ms="115100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateRssFeed -->
-        <test-method is-config="true" signature="clearSession()[pri:0, instance:digital.flightdeck.testsuite.RssFeedTestCase@1cf2fed4]" started-at="2020-07-15T07:37:07Z" name="clearSession" finished-at="2020-07-15T07:37:08Z" duration-ms="851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearSession -->
-      </class> <!-- digital.flightdeck.testsuite.RssFeedTestCase -->
-    </test> <!-- FD RssFeed -->
-  </suite> <!-- FD Rss Test Suit -->
+        </test-method> <!-- loginWithValidCredentials -->
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
+    </test> <!-- FD Login Test -->
+  </suite> <!-- FD Login Test Suit -->
+  <suite started-at="2020-07-27T11:06:22Z" name="FD Test Suite" finished-at="2020-07-27T11:06:22Z" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- FD Test Suite -->
 </testng-results>

@@ -2,7 +2,9 @@
 
 <suite name="FD Test Suite">
 	<suite-files>
-		<suite-file path="DevelopmentTestSuite/Clientsettings.xml" />
-		<suite-file path="DevelopmentTestSuite/RssFeed.xml" />
+<!-- 		<suite-file path="DevelopmentTestSuite/Clientsettings.xml" /> -->
+<!-- 		<suite-file path="DevelopmentTestSuite/RssFeed.xml" /> -->
+		<suite-file path="DevelopmentTestSuite/Login.xml" />
+		
 	</suite-files>
 </suite>
