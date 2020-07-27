@@ -8,13 +8,10 @@
     <classes>
       <class name="digital.flightdeck.testsuite.RssFeedTestCase">
         <methods>
-          <include name="validateRssFeed"/>
           <include name="clearSession"/>
-          <include name="clearUrlTextArea"/>
           <include name="gotoLoginPage"/>
           <include name="gotoHomePage"/>
-          <include name="enterInValidRssFeed"/>
-          <include name="enterValidRssFeed"/>
+          <include name="isRSSElementPresent"/>
         </methods>
       </class> <!-- digital.flightdeck.testsuite.RssFeedTestCase -->
     </classes>

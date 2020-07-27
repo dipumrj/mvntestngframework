@@ -77,8 +77,22 @@
     <version>3.1</version>
 </dependency>
 
-   
-  </dependencies>
-  
+     </dependencies>
+     
+ <repositories>
+    <repository>
+      <id>mvntestngrepo.read</id>
+      <url>https://github.com/dipumrj/mvntestngframework</url>
+    </repository>
+ </repositories>
+ 
+ <distributionManagement>
+    <repository>
+     <id>mvntestngrepo.read</id>
+     <url>https://github.com/dipumrj/mvntestngframework</url>
+    </repository>
+ </distributionManagement>
+ 
+ 
   
 </project>

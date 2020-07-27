@@ -1,0 +1,3 @@
+name,locator,value
+RssTextArea,id,AddRssUrl
+AddRssUrlSaveButton,cssselector,div[id='dvInvalidRssUrlHolder']

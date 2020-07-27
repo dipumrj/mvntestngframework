@@ -8,9 +8,9 @@ import digital.flightdeck.common.csv.CSVDataProvider;
 
 public class RssDataProvider {
 	
-	@DataProvider(name = "Element")
+	@DataProvider(name = "RssElement")
 	public static Object[][] getRssElements() throws IOException {
-		return CSVDataProvider.getCSVData(System.getProperty("user.dir")+"\\CSV Files\\Element.csv"); 
+		return CSVDataProvider.getCSVData(System.getProperty("user.dir")+"\\CSV Files\\RssElement.csv"); 
 	}
 	
 	@DataProvider(name = "ValidRssData")

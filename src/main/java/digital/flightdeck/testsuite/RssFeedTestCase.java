@@ -57,7 +57,21 @@ public class RssFeedTestCase {
  }
  
  
- @Test(priority=2,dataProvider = "InValidRssData", dataProviderClass = RssDataProvider.class)
+@Test(priority=2,dataProvider = "RssElement", dataProviderClass = RssDataProvider.class)
+public void isRSSElementPresent(String name, String locator, String value) throws Exception {
+		boolean isRSSElementPresent = Element.isPresent(driver, locator, value);
+		if (name != null && locator != null && value != null) {
+			if (isRSSElementPresent)
+				assert (true);
+			else
+				throw new Exception(name + "is not present");
+		}
+	}
+
+ 
+ 
+ 
+ @Test(priority=3,dataProvider = "InValidRssData", dataProviderClass = RssDataProvider.class)
  public void enterInValidRssFeed(String url,String expectedMessage)throws Exception 
  { 
 	 
@@ -81,7 +95,7 @@ public class RssFeedTestCase {
 	
  }
   
- @Test(priority=3,dataProvider = "ValidRssData", dataProviderClass = RssDataProvider.class)
+ @Test(priority=4,dataProvider = "ValidRssData", dataProviderClass = RssDataProvider.class)
  public void enterValidRssFeed(String url)throws Exception 
  { 
 	 
@@ -99,7 +113,7 @@ public class RssFeedTestCase {
 	
  }
  
- @Test(priority=4)
+ @Test(priority=5)
 public void validateRssFeed() throws Exception
 {
 	 rs.clickAddRssUrlSaveButton();
