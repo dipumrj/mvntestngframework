@@ -5,8 +5,6 @@
   <version>0.0.1-SNAPSHOT</version>
   
   
-  
-  
  <properties>
    <maven.compiler.source>1.8</maven.compiler.source>
    <maven.compiler.target>1.8</maven.compiler.target>
@@ -139,11 +137,11 @@
     </repository>
  </repositories>
  
- <distributionManagement>
-    <repository>
-     <id>mvntestngrepo.write</id>
-     <url>https://github.com/dipumrj/mvntestngframework</url>
-    </repository>
- </distributionManagement>
+<!--  <distributionManagement> -->
+<!--     <repository> -->
+<!--      <id>mvntestngrepo.write</id> -->
+<!--      <url>https://github.com/dipumrj/mvntestngframework</url> -->
+<!--     </repository> -->
+<!--  </distributionManagement> -->
   
 </project>
