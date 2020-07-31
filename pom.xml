@@ -150,6 +150,7 @@
 </dependency>
 
      </dependencies>
+    
      
  <repositories>
     <repository>
@@ -158,11 +159,11 @@
     </repository>
  </repositories>
  
-<!--  <distributionManagement> -->
-<!--     <repository> -->
-<!--      <id>mvntestngrepo.write</id> -->
-<!--      <url>https://github.com/dipumrj/mvntestngframework</url> -->
-<!--     </repository> -->
-<!--  </distributionManagement> -->
+ <distributionManagement>
+    <repository>
+     <id>mvntestngrepo.write</id>
+     <url>https://github.com/dipumrj/mvntestngframework</url>
+    </repository>
+ </distributionManagement>
   
 </project>
