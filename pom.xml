@@ -157,13 +157,16 @@
       <id>mvntestngrepo.read</id>
       <url>https://github.com/dipumrj/mvntestngframework</url>
     </repository>
+    
+    
  </repositories>
  
  <distributionManagement>
     <repository>
      <id>mvntestngrepo.write</id>
-     <url>https://github.com/dipumrj/mvntestngframework</url>
+     <url>https://github.com/dipumrj/mvntestngframework/tree/master/target</url>
     </repository>
+    
  </distributionManagement>
   
 </project>
