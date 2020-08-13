@@ -4,7 +4,8 @@
   <listeners>
     <listener class-name="digital.flightdeck.common.Listener"/>
   </listeners>
-  <test thread-count="5" name="FD Login Test(failed)" verbose="0">
+  <test thread-count="5" name="Chorme FD Login Test(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="digital.flightdeck.testsuite.LoginPageTestCase">
         <methods>
@@ -14,5 +15,5 @@
         </methods>
       </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
     </classes>
-  </test> <!-- FD Login Test(failed) -->
+  </test> <!-- Chorme FD Login Test(failed) -->
 </suite> <!-- Failed suite [FD Login Test Suit] -->

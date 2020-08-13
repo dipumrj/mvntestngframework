@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FD Rss Test Suit]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [FD Login Test Suit]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="digital.flightdeck.common.Listener"/>
   </listeners>
-  <test thread-count="5" name="FD RssFeed(failed)">
+  <test thread-count="5" name="Safari FD Login Test(failed)">
+    <parameter name="browser" value="Safari"/>
     <classes>
-      <class name="digital.flightdeck.testsuite.RssFeedTestCase">
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
         <methods>
-          <include name="clearSession"/>
-          <include name="gotoLoginPage"/>
-          <include name="gotoHomePage"/>
-          <include name="isRSSElementPresent"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="goToLoginPage"/>
+          <include name="goToHomePage"/>
         </methods>
-      </class> <!-- digital.flightdeck.testsuite.RssFeedTestCase -->
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
     </classes>
-  </test> <!-- FD RssFeed(failed) -->
-</suite> <!-- Failed suite [FD Rss Test Suit] -->
+  </test> <!-- Safari FD Login Test(failed) -->
+</suite> <!-- Failed suite [FD Login Test Suit] -->

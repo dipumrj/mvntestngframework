@@ -9,6 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 public class Driver {
 	public static WebDriver driver;
@@ -51,12 +56,26 @@ public class Driver {
 	public static WebDriver getInternertExplorerDriver() {
 
 		System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"\\Driver\\IEDriverServer.exe");
+		DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
+		cap.setCapability("nativeEvents", false);
+		cap.setCapability("unexpectedAlertBehaviour", "accept");
+		cap.setCapability("ignoreProtectedModeSettings", true);
+		cap.setCapability("disable-popup-blocking", true);
+		cap.setCapability("enablePersistentHover", true);
+		cap.setCapability("ignoreZoomSetting", true);
+		cap.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+		InternetExplorerOptions options = new InternetExplorerOptions();
+		options.merge(cap);
+		driver = new InternetExplorerDriver(options);
 		return driver;
 	}
 
 	public static WebDriver getSafariDriver() {
 
-		System.setProperty("webdriver.chrome.driver", "");
+//		DesiredCapabilities cap = DesiredCapabilities.safari();
+		SafariOptions options = new SafariOptions();
+		options.setUseTechnologyPreview(true);
+		driver = new SafariDriver(options);
 		return driver;
 	}
 

@@ -4,14 +4,16 @@
   <listeners>
     <listener class-name="digital.flightdeck.common.Listener"/>
   </listeners>
-  <test thread-count="5" name="FD RssFeed(failed)">
+  <test thread-count="5" name="Safari FD Login Test(failed)">
+    <parameter name="browser" value="Safari"/>
     <classes>
-      <class name="digital.flightdeck.testsuite.RssFeedTestCase">
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
         <methods>
-          <include name="gotoLoginPage"/>
-          <include name="enterRssFeed"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="goToLoginPage"/>
+          <include name="goToHomePage"/>
         </methods>
-      </class> <!-- digital.flightdeck.testsuite.RssFeedTestCase -->
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
     </classes>
-  </test> <!-- FD RssFeed(failed) -->
+  </test> <!-- Safari FD Login Test(failed) -->
 </suite> <!-- Failed suite [FD Login Test Suit] -->

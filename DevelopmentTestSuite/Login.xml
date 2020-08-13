@@ -1,11 +1,36 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite  name="FD Login Test Suit" thread-count="2" parallel="tests" > -->
 <suite  name="FD Login Test Suit" >
 <listeners>
 <listener class-name="digital.flightdeck.common.Listener"></listener>
 </listeners>
-  <test name="FD Login Test">
+
+  <test name="Chorme FD Login Test">
+  <parameter name="browser" value="chrome"/>
 	 <classes>
 	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" />
 	 </classes>
-   </test>
+	</test> 
+
+<!--   <test name="firefox FD Login Test"> -->
+<!--   <parameter name="browser" value="firefox"/> -->
+<!-- 	 <classes> -->
+<!-- 	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" /> -->
+<!-- 	 </classes> -->
+<!--    </test>	 -->
+   
+<!--      <test name="IE FD Login Test"> -->
+<!--   <parameter name="browser" value="IE"/> -->
+<!-- 	 <classes> -->
+<!-- 	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" /> -->
+<!-- 	 </classes> -->
+<!--    </test>	 -->
+   
+<!--      <test name="Safari FD Login Test"> -->
+<!--   <parameter name="browser" value="Safari"/> -->
+<!-- 	 <classes> -->
+<!-- 	  	   <class name ="digital.flightdeck.testsuite.LoginPageTestCase" /> -->
+<!-- 	 </classes> -->
+<!--    </test>	 -->
+   
 </suite>
