@@ -126,7 +126,7 @@
   <distributionManagement>
     <repository>
      <id>deploymentRepo</id>
-     <url>dav:https://github.com/dipumrj/mvntestngframework</url>
+     <url>https://github.com/dipumrj/mvntestngframework</url>
     </repository>
     </distributionManagement>
   
