@@ -117,17 +117,17 @@
      
  <repositories>
     <repository>
-      <id>deploymentRepo</id>
-      <url>dav:https://github.com/dipumrj/mvntestngframework</url>
+      <id>mvntestngrepo.read</id>
+      <url>https://github.com/dipumrj/mvntestngframework</url>
     </repository>
       
  </repositories>
  
-<!--   <distributionManagement> -->
-<!--     <repository> -->
-<!--      <id>mvntestngrepo.write</id> -->
-<!--      <url>https://github.com/dipumrj/mvntestngframework</url> -->
-<!--     </repository> -->
-<!--     </distributionManagement> -->
+  <distributionManagement>
+    <repository>
+     <id>deploymentRepo</id>
+     <url>dav:https://github.com/dipumrj/mvntestngframework</url>
+    </repository>
+    </distributionManagement>
   
 </project>
