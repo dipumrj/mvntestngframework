@@ -117,7 +117,7 @@
      
  <repositories>
     <repository>
-      <id>mvntestngrepo.read</id>
+      <id>deploymentRepo</id>
       <url>dav:https://github.com/dipumrj/mvntestngframework</url>
     </repository>
       
