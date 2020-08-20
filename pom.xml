@@ -35,6 +35,23 @@
 	</extensions>
 	</build>
   
+     
+ <repositories>
+    <repository>
+      <id>mvntestngrepo.read</id>
+      <url>https://github.com/dipumrj/mvntestngframework</url>
+    </repository>
+      
+ </repositories>
+ 
+  <distributionManagement>
+    <repository>
+     <id>deploymentRepo</id>
+     <url>https://github.com/dipumrj/mvntestngframework</url>
+    </repository>
+    </distributionManagement>
+  
+  
   
   <!-- 	   Alternative Compiler with in build-->
 <!-- 		<plugin> -->
@@ -122,20 +139,6 @@
 
      </dependencies>
     
-     
- <repositories>
-    <repository>
-      <id>mvntestngrepo.read</id>
-      <url>https://github.com/dipumrj/mvntestngframework</url>
-    </repository>
-      
- </repositories>
- 
-  <distributionManagement>
-    <repository>
-     <id>deploymentRepo</id>
-     <url>dav:https://github.com/dipumrj/mvntestngframework</url>
-    </repository>
-    </distributionManagement>
+  
   
 </project>
