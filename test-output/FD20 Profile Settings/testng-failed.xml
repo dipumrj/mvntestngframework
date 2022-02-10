@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FD20 Profile Settings]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FD20 Profile Settings(failed)">
+    <classes>
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
+        <methods>
+          <include name="loginWithValidCredentials" invocation-numbers="1"/>
+          <include name="goToLoginPage"/>
+          <include name="goToHomePage"/>
+        </methods>
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
+    </classes>
+  </test> <!-- FD20 Profile Settings(failed) -->
+</suite> <!-- Failed suite [FD20 Profile Settings] -->

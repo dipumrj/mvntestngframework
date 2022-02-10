@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="FD20 Profile Settings" >
+  <test name="FD20 Profile Settings">
+	 <classes>
+	  	    <class name ="digital.flightdeck.testsuite.FD20ProfileSettingTestCases" />
+<!-- 	  	      <class name ="digital.flightdeck.testsuite.LoginPageTestCase" /> -->
+	  </classes>
+   </test>
+</suite>
+

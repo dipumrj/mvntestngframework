@@ -17,7 +17,7 @@ import digital.flightdeck.common.FileUtility;
 import digital.flightdeck.pages.Clientsettings;
 import digital.flightdeck.pages.KeywordManagerPage;;
 
-
+//hosting maven repo in github
 public class ClientSettingsTestCase {
 	WebDriver driver = Driver.getChromeDriver(false);
 	LoginPage lp = new LoginPage(driver);

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!-- <suite  name="FD Login Test Suit" thread-count="2" parallel="tests" > -->
-<suite  name="FD Login Test Suit" >
+<suite  name="FD Login Test Suit" thread-count="3" parallel="tests" >
 <listeners>
 <listener class-name="digital.flightdeck.common.Listener"></listener>
 </listeners>

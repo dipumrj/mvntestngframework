@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FD Login Test Suit]" guice-stage="DEVELOPMENT">
+<suite thread-count="3" parallel="tests" name="Failed suite [FD Login Test Suit]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="digital.flightdeck.common.Listener"/>
   </listeners>
-  <test thread-count="5" name="Safari FD Login Test(failed)">
+  <test thread-count="3" parallel="tests" name="firefox FD Login Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
+        <methods>
+          <include name="loginWithValidCredentials" invocation-numbers="1"/>
+          <include name="goToLoginPage"/>
+          <include name="goToHomePage"/>
+        </methods>
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
+    </classes>
+  </test> <!-- firefox FD Login Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Safari FD Login Test(failed)">
     <parameter name="browser" value="Safari"/>
     <classes>
       <class name="digital.flightdeck.testsuite.LoginPageTestCase">
@@ -16,4 +28,16 @@
       </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
     </classes>
   </test> <!-- Safari FD Login Test(failed) -->
+  <test thread-count="3" parallel="tests" name="IE FD Login Test(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+          <include name="goToLoginPage"/>
+          <include name="goToHomePage"/>
+        </methods>
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
+    </classes>
+  </test> <!-- IE FD Login Test(failed) -->
 </suite> <!-- Failed suite [FD Login Test Suit] -->

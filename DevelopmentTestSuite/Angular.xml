@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="FD Login Test Suit" >
+  <test name="FD Angular">
+	 <classes>
+	 
+<!-- 	  	   <class name ="digital.flightdeck.testsuite.AnuglarPageTescase" /> -->
+	  	    <class name ="digital.flightdeck.testsuite.AngularPagefactoryTestCase" />
+	  	   
+	  	   
+	 </classes>
+   </test>
+</suite>
+

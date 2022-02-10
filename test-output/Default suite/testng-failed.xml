@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="digital.flightdeck.testsuite.RssFeedTestCase">
+      <class name="digital.flightdeck.testsuite.LoginPageTestCase">
         <methods>
-          <include name="clearSession"/>
-          <include name="clearUrlTextArea"/>
-          <include name="gotoLoginPage"/>
-          <include name="enterRssFeed" invocation-numbers="1 2"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="goToLoginPage"/>
+          <include name="goToHomePage"/>
         </methods>
-      </class> <!-- digital.flightdeck.testsuite.RssFeedTestCase -->
+      </class> <!-- digital.flightdeck.testsuite.LoginPageTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

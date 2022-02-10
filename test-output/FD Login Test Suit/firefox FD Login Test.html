@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>firefox FD Login Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 07 17:14:43 NPT 2020</td>
+<td>Started on:</td><td>Thu Jan 28 13:16:13 NPT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37335 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26398 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase<br>Parameters: dipesh, dmaharjan<br/>
+<a href="#Output-955074970" onClick='toggleBox("Output-955074970", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-955074970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-955074970">
+<a href='C:\Users\dipesh.maharjan\eclipse-workspace\mvntestngframework\Screenshots\failure_screenshots\loginWithValidCredentials.png'> <img src='C:\Users\dipesh.maharjan\eclipse-workspace\mvntestngframework\Screenshots\failure_screenshots\loginWithValidCredentials.png' height='100' width='100'/> </a><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Home Page&quot;. Current title: &quot;Log On&quot; (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15252, moz:profile: C:\Users\dipesh.maharjan\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8976a58-2a18-422a-ace1-ec3da2ce6224
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials(LoginPageTestCase.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace955074970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace955074970'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Home Page&quot;. Current title: &quot;Log On&quot; (tried for 2 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15252, moz:profile: C:\Users\dipesh.maharjan\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d8976a58-2a18-422a-ace1-ec3da2ce6224
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials(LoginPageTestCase.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+</pre></div></td>
+<td>7</td>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@769e7ee8</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,12 +141,7 @@ function toggleAllBoxes() {
 <td title='digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase<br>Parameters: null, null</td>
 <td></td>
 <td>0</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@419c5f1a</td></tr>
-<tr>
-<td title='digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase<br>Parameters: dipesh, dmaharjan</td>
-<td></td>
-<td>11</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@419c5f1a</td></tr>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@769e7ee8</td></tr>
 </table><p>
 </body>
 </html>

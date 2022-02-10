@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 13 13:07:20 NPT 2020</td>
+<td>Started on:</td><td>Thu Jan 28 13:16:39 NPT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (244 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (16 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='digital.flightdeck.testsuite.LoginPageTestCase.goToHomePage()'><b>goToHomePage</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase<br>Parameters: org.testng.TestRunner@7d8995e, Safari</td>
+<td title='digital.flightdeck.testsuite.LoginPageTestCase.goToHomePage()'><b>goToHomePage</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase<br>Parameters: org.testng.TestRunner@6ebaaaa3, Safari</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.1.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: driver.version: Driver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:63)
 	at digital.flightdeck.common.Driver.getSafariDriver(Driver.java:78)
 	at digital.flightdeck.testsuite.LoginPageTestCase.goToHomePage(LoginPageTestCase.java:47)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2012993836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2012993836'><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269478805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1269478805'><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.1.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: driver.version: Driver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:63)
@@ -107,22 +111,16 @@ Driver info: driver.version: Driver
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@12d4bf7e</td></tr>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@48fa0f47</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -135,12 +133,12 @@ Driver info: driver.version: Driver
 <td title='digital.flightdeck.testsuite.LoginPageTestCase.goToLoginPage()'><b>goToLoginPage</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase</td>
 <td></td>
 <td>0</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@12d4bf7e</td></tr>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@48fa0f47</td></tr>
 <tr>
 <td title='digital.flightdeck.testsuite.LoginPageTestCase.goToLoginPage()'><b>goToLoginPage</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase</td>
 <td></td>
 <td>0</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@12d4bf7e</td></tr>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@48fa0f47</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -153,16 +151,20 @@ Driver info: driver.version: Driver
 <td title='digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.1.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: driver.version: Driver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:63)
 	at digital.flightdeck.common.Driver.getSafariDriver(Driver.java:78)
 	at digital.flightdeck.testsuite.LoginPageTestCase.goToHomePage(LoginPageTestCase.java:47)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1785507932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1785507932'><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1257156123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1257156123'><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.1.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: driver.version: Driver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:63)
@@ -182,36 +184,34 @@ Driver info: driver.version: Driver
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@12d4bf7e</td></tr>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@48fa0f47</td></tr>
 <tr>
 <td title='digital.flightdeck.testsuite.LoginPageTestCase.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: digital.flightdeck.testsuite.LoginPageTestCase</td>
 <td><div><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.1.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: driver.version: Driver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:63)
 	at digital.flightdeck.common.Driver.getSafariDriver(Driver.java:78)
 	at digital.flightdeck.testsuite.LoginPageTestCase.goToHomePage(LoginPageTestCase.java:47)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1613095350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1613095350'><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace870624086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace870624086'><pre>org.openqa.selenium.WebDriverException: SafariDriver requires Safari 10 running on OSX El Capitan or greater.
 Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.1.78&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
+System info: host: &apos;AITSLPT-DIPESH&apos;, ip: &apos;192.168.10.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.1&apos;
 Driver info: driver.version: Driver
 	at org.openqa.selenium.safari.SafariDriverService.createDefaultService(SafariDriverService.java:59)
 	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:63)
@@ -231,22 +231,16 @@ Driver info: driver.version: Driver
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:835)
 </pre></div></td>
 <td>0</td>
-<td>digital.flightdeck.testsuite.LoginPageTestCase@12d4bf7e</td></tr>
+<td>digital.flightdeck.testsuite.LoginPageTestCase@48fa0f47</td></tr>
 </table><p>
 </body>
 </html>
