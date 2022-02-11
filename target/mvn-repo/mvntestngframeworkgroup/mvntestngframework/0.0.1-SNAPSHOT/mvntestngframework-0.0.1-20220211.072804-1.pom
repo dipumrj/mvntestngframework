@@ -48,7 +48,8 @@
                 <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
                 <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
                 <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-                <branch>refs/heads/master</branch>                       <!-- remote branch name -->
+                <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+				<merge>true</merge>               
                 <includes><include>**/*</include></includes>
                 <repositoryName>mvntestngframework</repositoryName>      	<!-- github repo name -->
                 <repositoryOwner>dipumrj</repositoryOwner>    				<!-- github username  -->
@@ -85,7 +86,7 @@
 
 	<repository>
         <id>mvntestngframework-mvn-repo</id>
-        <url>https://github.com/dipumrj/mvntestngframework/raw/mvn-repo/</url>
+        <url>https://raw.github.com/dipumrj/mvntestngframework/mvn-repo/</url>
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
